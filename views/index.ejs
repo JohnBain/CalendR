@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CalendR</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="/javascripts/require.js"></script>
+    <script src="/javascripts/datejs.js"></script>
+    <script src="/javascripts/global.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+  <div class="flexcontainer">
+  <div class = "main">
+  <div class="calendar">
+
+  <header>
+        <div class="month"> 
+  <ul>
+    <li class="prev">&#10094;</li>
+    <li>
+       <span class="monthHolder"></span>
+      <span style="font-size:18px" class="yearHolder"></span>
+    </li>
+    <li class="next">&#10095;</li>
+  </ul>
+</div>
+ 	   </header>
+
+        <table class="days">
+        <tbody>
+        <tr>
+           <td>sun</td> 
+           <td>mon</td> 
+           <td>tue</td>
+           <td>wed</td> 
+           <td>thu</td> 
+           <td>fri</td> 
+           <td>sat</td>
+        </tr>
+        </tbody>
+        <tbody class="dayHolder"> 
+        
+        </tbody> 
+        
+        </table>
+  
+</div> <!--End of calendar div-->
+<div class="schedule">
+      <p><strong class="schedDate"></strong><span class="add">&#10010;</span></p>
+      <div class="activities">
+      </div>
+</div>
+
+<div class="adder">
+      <p><strong class>Add an event</strong></span></p>
+      <form class="timeForm">
+      <p><input type="text" class="time"></input>
+      <select name="meridiem" class="meridiem">
+            <option value="am">AM</option>
+            <option value="pm">PM</option>
+      </select>
+       <input type="text" class="description"></input></p>
+    
+
+       <p><span class="submit">submit</input></p>
+       </form>
+</div>
+
+</div><!--End of main div-->
+        <footer class="footer">
+        <% include ./partials/footer %>
+        </footer>
+</div><!--End of flexcontainer div-->
+  </body>
+</html>
